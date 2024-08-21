@@ -1,3 +1,11 @@
+.row {
+    padding-top: 15px;
+}
+.col {
+    background-color: black;
+    border: 1px solid white;
+    margin-right: 10px;
+}
 .img-grid {
     width: 150px;
 }
