@@ -1,15 +1,21 @@
 body {
-    background-image: url("img/bg.jpg");
+    background-image: linear-gradient(to right, black, rgb(43, 43, 43));
     background-position: center center;
     background-color: rgb(29, 26, 26);
     background-size: cover;
     background-attachment: fixed;
+    color: white;
+}
+header {
+    
+    padding: 20px;
 }
 header > h1 {
     text-align: center;
     font-weight: bolder;
     padding: 20px;
-    font-size: 3em;
+    font-size: 3.3em;
+    font-family: serif;
 }
 nav {
     text-align: center;
@@ -22,11 +28,11 @@ nav > ul > li {
 }
 nav > ul > li > a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 nav > ul > li > a:hover {
     font-weight: bolder;
-    color: rgb(85, 85, 85);
+    color: rgb(167, 167, 167);
     transition-duration: .2s;
     background-color: rgba(0, 0, 0, 0.08);
     border-radius: 20px;
