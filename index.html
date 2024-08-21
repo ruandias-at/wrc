@@ -23,7 +23,7 @@
         </nav>
     </header>
     <main>
-        <section id="sobre">
+        <section id="sobre" class="bloco">
             <h2>O que é a Web Rinha dos Crias II</h2>
             <article>
                 <img src="img/wrc2.jpg" alt="wrc2" width="320px">
@@ -32,7 +32,7 @@
                 <p>Esperamos que essa nova edição seja ainda melhor do que a primeira e contamos com a participação de todos.</p>
             </article>
         </section>
-        <section id="convidados">
+        <section id="convidados" class="bloco">
             <h2>Convidados</h2>
             <div class="container text-center">
                 <div class="row">
@@ -89,7 +89,7 @@
                 </div>
             </div>
         </section>
-        <section id="modalidades">
+        <section id="modalidades" class="bloco">
             <h2>Modalidades</h2>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -149,20 +149,29 @@
                 </button>
             </div>
         </section>
-        <section id="quando">
+        <section id="quando" class="bloco">
             <h2>Quando Ocorrerá?</h2>
             <article>
-                <p>A Segunda edição da Web Rinha dos Crias acontecerá no dia 21 de Setembro de 2024</p>
+                <p>A Segunda edição da Web Rinha dos Crias acontecerá no dia 21 de Setembro de 2024 às 15h</p>
+                <div class="countdown-container">
+                    <h1>Contagem Regressiva</h1>
+                    <div id="countdown">
+                        <div><span id="days"></span> Dias</div>
+                        <div><span id="hours"></span> Horas</div>
+                        <div><span id="minutes"></span> Minutos</div>
+                        <div><span id="seconds"></span> Segundos</div>
+                    </div>
+                </div>
             </article>
         </section>
-        <section id="participar">
+        <section id="participar" class="bloco">
             <h2>Como faço para participar?</h2>
             <article>
                 <p>Para participar é necessário confirmar sua presença no servidor do discord no canal do evento referente à WRC II.</p>
                 <p>Será necessário que você vote nas categorias que você deseja participar e já deixar baixado o jogo ou os requisitos necessários da modalidade até o dia do evento.</p>
             </article>
         </section>
-        <section id="staff">
+        <section id="staff" class="bloco">
             <h2>Organizadores</h2>
             <article>
                 <p>Para mais informações basta entrar em contato com os organizadores do evento: </p>
@@ -192,6 +201,7 @@
     <footer>
         <p>&copy;Site criado por <strong>Ruan Dias</strong></p>
     </footer>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

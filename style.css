@@ -1,3 +1,32 @@
+body {
+    background-color: lightgrey;
+}
+header > h1 {
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    font-size: 3em;
+}
+nav {
+    text-align: center;
+}
+nav > ul > li {
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    font-size: 1.3em;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+nav > ul > li > a:hover {
+    font-weight: bolder;
+    color: rgb(85, 85, 85);
+    transition-duration: .2s;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
 .row {
     padding-top: 15px;
 }
@@ -7,4 +36,23 @@
 #carouselExampleAutoplaying {
     width: 650px;
     margin: auto;
+}
+.countdown-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+}
+#countdown div {
+    margin: 0 15px;
+}
+#countdown span {
+    font-weight: bold;
+    font-size: 40px;
+    color: #007bff;
 }
