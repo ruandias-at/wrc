@@ -1,13 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 body {
     background-image: linear-gradient(to right, black, rgb(43, 43, 43));
-    background-position: center center;
-    background-color: rgb(29, 26, 26);
-    background-size: cover;
-    background-attachment: fixed;
     color: white;
 }
 header {
-    
     padding: 20px;
 }
 header > h1 {
@@ -37,6 +37,27 @@ nav > ul > li > a:hover {
     background-color: rgba(0, 0, 0, 0.08);
     border-radius: 20px;
 }
+main {
+    width: 70%;
+    margin: auto;
+}
+main p {
+    text-indent: 1em;
+    text-align: justify;
+    font-size: 1.2em;
+}
+main section {
+    padding-top: 20px;
+}
+main h2 {
+    text-align: center;
+    padding: 10px;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
 .row {
     padding-top: 15px;
 }
@@ -44,19 +65,24 @@ nav > ul > li > a:hover {
     width: 150px;
 }
 #carouselExampleAutoplaying {
-    width: 650px;
+    width: 720px;
     margin: auto;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 10px;
 }
 .countdown-container {
-    text-align: center;
-    background-color: #fff;
+
     padding: 20px;
     border-radius: 8px;
 }
 #countdown {
+    text-align: center;
     display: flex;
     justify-content: space-around;
     font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
 }
 #countdown div {
     margin: 0 15px;
@@ -64,5 +90,35 @@ nav > ul > li > a:hover {
 #countdown span {
     font-weight: bold;
     font-size: 40px;
-    color: #007bff;
+    color: #0dc41c;
+}
+#staff td {
+    font-size: 1.4em;
+}
+/* Estilo básico para o botão */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 40px;
+    display: none; /* Inicialmente escondido */
+}
+
+/* Efeito de hover */
+#backToTop:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding-top: 100px;
+    margin: 0px;
+
 }

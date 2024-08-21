@@ -27,3 +27,21 @@ const countdownInterval = setInterval(() => {
         document.getElementById("countdown").innerHTML = "Evento finalizado!";
     }
 }, 1000);
+// Pega o botão
+var mybutton = document.getElementById("backToTop");
+
+// Mostra o botão quando o usuário rola para baixo 20px da parte superior do documento
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// Quando o usuário clicar no botão, ele rola suavemente de volta para o topo
+mybutton.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
